@@ -1,7 +1,12 @@
-# WAC 6800 — EAPS OFF Geometry Calibrated
+# WAC 6800 — Sandbox limpa EAPS OFF
 
-Conteúdo:
-- eaps_off_geometry.json
-- docs/page-08-geometry-preview.png
+Este pacote usa exclusivamente:
 
-Nesta fase, o foco é apenas a extração geométrica perfeita do Figure 4-8 / Page S50-31.
+- Figure 4-8
+- page-08
+- Page S50-31
+- `docs/page-08.png`
+
+Objetivo:
+- eliminar qualquer contaminação visual de outros perfis
+- servir de base limpa para a extração geométrica do EAPS OFF
