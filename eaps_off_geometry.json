@@ -1,0 +1,42 @@
+{
+  "profile": "offshore_eaps_off",
+  "source": {
+    "figure": "Figure 4-8",
+    "page": "S50-31",
+    "document": "Leonardo AW139 Rotorcraft Flight Manual (RFM), Edition 2, Revision 32",
+    "image": "docs/page-08.png",
+    "pageWidth": 1323,
+    "pageHeight": 1872
+  },
+  "mainChart": {
+    "left": 445,
+    "top": 638,
+    "right": 953,
+    "bottom": 1135,
+    "width": 508,
+    "height": 497,
+    "xKgMin": 5800,
+    "xKgMax": 7000,
+    "yPaMinFt": -1000,
+    "yPaMaxFt": 5000,
+    "yZeroFt": 1035
+  },
+  "headwindChart": {
+    "left": 445,
+    "top": 1135,
+    "right": 953,
+    "bottom": 1299,
+    "width": 508,
+    "height": 164,
+    "xKgMin": 5800,
+    "xKgMax": 7000,
+    "yHeadwindMinKt": 0,
+    "yHeadwindMaxKt": 20
+  },
+  "notes": [
+    "Geometria calibrada isoladamente a partir da p\u00e1gina completa do Figure 4-8.",
+    "Sem reaproveitamento visual do Standard ou do EAPS ON.",
+    "Pr\u00f3ximo passo: extra\u00e7\u00e3o das curvas OAT e dos limites Hd LIMIT / MAX OAT LIMIT.",
+    "Com 0 kt, o c\u00e1lculo futuro deve usar somente o envelope principal antes de qualquer corre\u00e7\u00e3o de headwind."
+  ]
+}

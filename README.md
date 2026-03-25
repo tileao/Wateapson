@@ -1,13 +1,7 @@
-# WAC 6800 — Sandbox EAPS OFF
+# WAC 6800 — EAPS OFF Geometry Calibrated
 
-Ambiente isolado para análise do perfil:
+Conteúdo:
+- eaps_off_geometry.json
+- docs/page-08-geometry-preview.png
 
-- Offshore Helideck
-- EAPS OFF
-
-Objetivo desta sandbox:
-- usar somente a página do RFM desse perfil
-- documentar casos de teste
-- preparar a extração geométrica correta antes da integração no app principal
-
-Nesta fase, a sandbox serve como base de análise isolada.
+Nesta fase, o foco é apenas a extração geométrica perfeita do Figure 4-8 / Page S50-31.
