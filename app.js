@@ -20,7 +20,7 @@ const EXPORT_FILE_NAME = 'wac6800-offshore-eaps-on.pdf';
 const CHART_DATA = {"main": {"xMin": 82.034, "xMax": 289.688, "kgMin": 4800, "kgMax": 6800, "yBottomFt": 432.153, "yZeroFt": 387.359, "yTopFt": 164.018, "minPaFt": -1000, "maxPaFt": 5000}, "headwind": {"xMin": 82.034, "xMax": 289.688, "kgMin": 4800, "kgMax": 6800, "yTop": 435.555, "yBottom": 487.09, "maxKt": 20}, "tempCurves": {"-40": [[289.688, 432.153], [289.688, 164.018]], "-30": [[289.688, 432.153], [289.688, 181.847], [289.184, 179.642], [287.316, 175.142], [285.4, 170.687], [283.451, 166.222], [282.506, 164.018]], "-20": [[289.688, 432.153], [289.688, 230.988], [289.499, 228.783], [285.77, 219.833], [281.845, 210.963], [278.285, 201.945], [277.34, 199.739], [276.394, 197.471], [272.431, 187.784], [268.444, 178.091], [264.424, 168.428], [263.542, 166.222], [262.597, 164.018]], "-10": [[289.688, 432.153], [289.688, 277.925], [289.499, 275.657], [287.609, 271.246], [286.664, 268.978], [280.104, 253.389], [273.813, 237.686], [267.385, 222.042], [266.44, 219.837], [265.558, 217.632], [258.657, 201.25], [252.464, 184.36], [244.642, 168.428], [243.571, 166.222], [242.5, 164.018]], "0": [[289.688, 432.153], [289.688, 322.593], [289.12, 320.388], [288.239, 318.12], [278.265, 294.393], [268.802, 270.419], [259.006, 246.613], [258.124, 244.408], [257.179, 242.203], [256.297, 239.935], [252.062, 229.044], [247.639, 219.172], [242.5, 208.686], [241.492, 206.418], [240.421, 204.213], [235.184, 193.053], [229.969, 181.885], [224.796, 170.696], [223.725, 168.428], [222.717, 166.222], [221.646, 164.018]], "10": [[289.688, 432.153], [289.688, 367.261], [289.373, 365.056], [278.016, 337.574], [267.043, 309.926], [255.793, 282.398], [254.91, 280.13], [253.966, 277.925], [253.084, 275.657], [247.12, 262.198], [240.579, 248.862], [234.434, 235.461], [233.426, 233.256], [232.356, 230.988], [226.535, 218.329], [220.667, 205.686], [214.905, 192.998], [213.897, 190.793], [212.825, 188.588], [211.817, 186.32]], "20": [[289.688, 432.153], [289.688, 409.724], [289.247, 407.456], [288.302, 405.251], [287.419, 403.046], [282.26, 390.383], [277.127, 377.699], [271.921, 365.056], [271.039, 362.788], [270.093, 360.583], [264.848, 347.548], [259.914, 335.188], [253.588, 322.593], [252.58, 320.388], [251.509, 318.12], [250.438, 315.915], [249.43, 313.647], [243.516, 301.002], [237.503, 288.362], [231.725, 275.657], [230.655, 273.452], [229.647, 271.246], [223.557, 258.584], [218.306, 245.533], [211.503, 233.256], [210.306, 230.988], [209.172, 228.783], [207.975, 226.515]], "30": [[282.191, 432.153], [282.191, 432.09], [281.245, 429.822], [280.364, 427.617], [275.73, 416.316], [271.197, 404.983], [265.622, 394.1], [264.613, 391.832], [263.542, 389.627], [258.252, 378.47], [252.999, 367.306], [247.792, 356.11], [246.721, 353.842], [245.713, 351.637], [244.642, 349.432], [243.634, 347.164], [238.405, 336.015], [233.223, 324.832], [228.072, 313.647], [227.064, 311.442], [225.93, 309.174], [219.56, 297.312], [213.342, 285.374], [207.093, 273.452], [205.959, 271.246], [204.762, 268.978], [203.628, 266.773]], "40": [[261.085, 432.153], [261.022, 432.09], [259.951, 429.822], [258.943, 427.617], [255.408, 420.175], [251.948, 412.697], [248.422, 405.251], [247.351, 403.046], [246.343, 400.778], [242.579, 392.348], [237.889, 384.383], [233.616, 376.207], [232.418, 374.002], [231.222, 371.734], [230.025, 369.529], [219.722, 350.244], [209.622, 330.87], [199.595, 311.442], [198.461, 309.174], [197.264, 306.968]], "50": [[135.648, 432.153], [135.585, 432.09], [126.569, 418.237], [117.246, 404.459], [109.88, 389.627], [108.746, 387.359]]}, "headwindCurves": {"4800": [[82.034, 435.555], [83.798, 438.075], [100.907, 462.63], [125.619, 474.433], [153.037, 484.507], [160.094, 487.09]], "5000": [[102.824, 435.555], [104.525, 438.075], [106.289, 440.658], [111.312, 447.557], [116.94, 453.553], [123.741, 458.74], [127.206, 461.323], [131.049, 463.843], [143.25, 471.123], [157.666, 476.853], [170.929, 481.924], [178.238, 484.507], [185.42, 487.09]], "5200": [[123.489, 435.555], [125.001, 438.075], [126.639, 440.658], [131.151, 447.611], [137.487, 453.937], [144.217, 458.74], [148.249, 461.323], [152.722, 463.843], [166.197, 471.05], [180.547, 476.824], [194.933, 481.924], [202.116, 484.507], [209.487, 487.09]], "5400": [[144.154, 435.555], [145.414, 438.075], [146.863, 440.658], [151.66, 448.403], [157.767, 453.978], [165.512, 458.74], [169.922, 461.323], [174.836, 463.843], [188.938, 471.116], [203.626, 476.634], [218.559, 481.924], [225.931, 484.507], [232.293, 487.09]], "5600": [[165.07, 435.555], [165.889, 438.075], [167.086, 440.658], [171.688, 448.885], [179.815, 454.306], [187.877, 458.74], [192.728, 461.323], [197.894, 463.843], [212.227, 471.0], [227.481, 475.964], [242.309, 481.924], [248.8, 484.507], [255.351, 487.09]], "5800": [[185.735, 435.555], [186.302, 438.075], [187.499, 440.658], [192.259, 449.087], [203.264, 454.464], [211.503, 458.74], [216.858, 461.323], [222.465, 463.843], [236.899, 470.19], [251.989, 475.928], [266.629, 481.924], [272.426, 484.507], [277.402, 487.09]], "6000": [[206.589, 435.555], [207.03, 438.075], [208.227, 440.658], [212.581, 447.353], [223.342, 452.665], [230.277, 456.157], [235.696, 458.74], [241.429, 461.323], [253.893, 466.235], [265.746, 471.989], [278.222, 476.758], [283.64, 479.341], [288.553, 481.924], [289.688, 484.507], [289.688, 487.09]], "6200": [[227.379, 435.555], [228.134, 438.075], [229.709, 440.658], [232.104, 443.241], [235.254, 445.824], [239.097, 448.407], [243.507, 450.99], [248.359, 453.574], [253.714, 456.157], [259.51, 458.74], [265.621, 461.323], [271.039, 463.843], [276.583, 466.426], [282.506, 469.009], [288.806, 471.592], [289.688, 474.175], [289.688, 487.09]], "6400": [[248.107, 435.555], [249.367, 438.075], [256.692, 448.171], [271.687, 452.99], [282.127, 458.74], [287.357, 461.323], [289.688, 463.843], [289.688, 487.09]], "6600": [[268.834, 435.555], [270.598, 438.075], [273.055, 440.658], [276.268, 443.241], [280.11, 445.824], [284.647, 448.407], [289.373, 450.99], [289.688, 453.574], [289.688, 487.09]], "6800": [[289.561, 435.555], [289.688, 438.075], [289.688, 487.09]]}, "limits": {"maxOat": [[108.746, 387.359], [109.502, 385.153], [110.321, 382.885], [111.078, 380.68], [111.833, 378.475], [112.653, 376.207], [113.408, 374.002], [114.165, 371.734], [114.858, 369.529], [115.55, 367.261], [116.244, 365.056], [116.874, 362.788], [117.441, 360.583], [118.008, 358.315], [118.512, 356.11], [119.016, 353.842], [119.394, 351.637], [119.772, 349.431], [120.149, 347.163], [120.402, 344.958], [120.654, 342.69], [120.843, 340.485], [120.969, 338.217], [121.095, 336.012]], "hdLimit": [[211.44, 164.018], [211.44, 167.86], [211.376, 172.144], [211.314, 176.429], [211.25, 180.65], [211.188, 184.871], [211.062, 189.092], [210.873, 193.313], [210.684, 197.534], [210.495, 201.692], [210.117, 205.913], [209.739, 210.072], [209.298, 214.23], [208.857, 218.325], [208.416, 222.483], [208.038, 226.578], [207.597, 230.736], [207.219, 234.831], [206.841, 238.863], [206.462, 242.958], [206.084, 247.054], [205.643, 251.086], [205.265, 255.118], [204.824, 259.15], [204.32, 263.182], [203.816, 267.151], [203.312, 271.183], [202.745, 275.152], [202.115, 279.121], [201.485, 283.091], [200.855, 287.06], [200.162, 291.029], [199.469, 294.935], [198.713, 298.841], [197.957, 302.747], [197.138, 306.653], [195.185, 310.559], [186.617, 314.465], [177.356, 318.309], [166.33, 322.215], [154.864, 326.058], [142.956, 329.901], [130.608, 333.744], [120.465, 336.742]]}};
 const PAGE_IMAGE = new Image();
 PAGE_IMAGE.src = 'docs/page-09.png';
-const PAGE_PLACEMENT = { x: 340, y: 430, width: 600, height: 940 };
+const PAGE_PLACEMENT = { offsetX: 217.5, offsetY: 272.4, scaleX: 2.225, scaleY: 2.223 };
 let currentResult = null;
 const statusCard = document.getElementById('statusCard');
 const statusBadge = statusCard.querySelector('.status-badge');
@@ -249,8 +249,8 @@ function drawLegendRow(targetCtx, startX, startY, items) {
   targetCtx.restore();
 }
 
-function pxX(x) { return PAGE_PLACEMENT.x + x; }
-function pxY(y) { return PAGE_PLACEMENT.y + y; }
+function pxX(x) { return PAGE_PLACEMENT.offsetX + (x * PAGE_PLACEMENT.scaleX); }
+function pxY(y) { return PAGE_PLACEMENT.offsetY + (y * PAGE_PLACEMENT.scaleY); }
 
 function renderAnnotatedCanvas(result = currentResult, options = {}) {
   if (!PAGE_IMAGE.complete || !PAGE_IMAGE.naturalWidth) return null;
@@ -300,88 +300,30 @@ function renderAnnotatedCanvas(result = currentResult, options = {}) {
     const withinColor = result.within ? '#14b86a' : '#df4f5f';
     const blue = '#52a8ff';
     const amber = '#f3b447';
-    const softAmber = 'rgba(243,180,71,0.35)';
-    const softWhite = 'rgba(255,255,255,0.65)';
+    drawPolyline(toPoints(CHART_DATA.limits.maxOat), '#5b6bd4', 2, true);
+    drawPolyline(toPoints(CHART_DATA.limits.hdLimit), '#5b6bd4', 2, true);
+    drawPolyline(result.noWind.lowerCurve, amber, 3);
+    if (result.noWind.upperTemp !== result.noWind.lowerTemp) drawPolyline(result.noWind.upperCurve, amber, 3);
 
     const paY = result.noWind.paY;
     const noWindX = result.noWind.noWindX;
     const actualX = kgToX(result.actualWeightKg);
     const maxX = kgToX(result.maxWeight);
     const hwY = result.hw.hwY;
-    const main = CHART_DATA.main;
-    const headwind = CHART_DATA.headwind;
-
-    const annotate = (txt, xData, yData, color, dx = 10, dy = -10, align = 'left') => {
-      ex.save();
-      ex.font = '16px Inter, system-ui, sans-serif';
-      ex.fillStyle = color;
-      ex.textAlign = align;
-      ex.textBaseline = 'middle';
-      ex.fillText(txt, pxX(xData) + dx, pxY(yData) + dy);
-      ex.restore();
-    };
-
-    drawPolyline(toPoints(CHART_DATA.limits.maxOat), '#5b6bd4', 2, true);
-    drawPolyline(toPoints(CHART_DATA.limits.hdLimit), '#5b6bd4', 2, true);
-
-    if (result.noWind.lowerCurve) drawPolyline(result.noWind.lowerCurve, result.noWind.upperTemp !== result.noWind.lowerTemp ? softAmber : amber, result.noWind.upperTemp !== result.noWind.lowerTemp ? 2 : 3);
-    if (result.noWind.upperTemp !== result.noWind.lowerTemp && result.noWind.upperCurve) drawPolyline(result.noWind.upperCurve, softAmber, 2);
 
     ex.save();
-    ex.strokeStyle = amber;
-    ex.lineWidth = 4;
-    ex.beginPath();
-    ex.moveTo(pxX(result.noWind.lowerX), pxY(paY));
-    ex.lineTo(pxX(result.noWind.upperX), pxY(paY));
-    ex.stroke();
-    ex.restore();
-
-    ex.save();
-    ex.setLineDash([10, 8]);
-    ex.strokeStyle = softWhite;
-    ex.lineWidth = 2.5;
-
-    ex.beginPath();
-    ex.moveTo(pxX(main.xMin), pxY(paY));
-    ex.lineTo(pxX(main.xMax), pxY(paY));
-    ex.stroke();
-
-    ex.beginPath();
-    ex.moveTo(pxX(noWindX), pxY(paY));
-    ex.lineTo(pxX(noWindX), pxY(headwind.yTop));
-    ex.stroke();
-
-    ex.beginPath();
-    ex.moveTo(pxX(headwind.xMin), pxY(hwY));
-    ex.lineTo(pxX(headwind.xMax), pxY(hwY));
-    ex.stroke();
-
+    ex.strokeStyle = '#ffffff'; ex.lineWidth = 2.5; ex.setLineDash([12, 10]);
+    ex.beginPath(); ex.moveTo(pxX(CHART_DATA.main.xMin), pxY(paY)); ex.lineTo(pxX(CHART_DATA.main.xMax), pxY(paY)); ex.stroke();
     ex.setLineDash([]);
-    ex.strokeStyle = blue;
-    ex.lineWidth = 3;
-    ex.beginPath();
-    ex.moveTo(pxX(actualX), pxY(main.yBottomFt));
-    ex.lineTo(pxX(actualX), pxY(headwind.yBottom));
-    ex.stroke();
-
-    ex.strokeStyle = withinColor;
-    ex.beginPath();
-    ex.moveTo(pxX(maxX), pxY(headwind.yBottom));
-    ex.lineTo(pxX(maxX), pxY(hwY));
-    ex.stroke();
-
+    ex.strokeStyle = blue; ex.beginPath(); ex.moveTo(pxX(actualX), pxY(CHART_DATA.main.yBottomFt)); ex.lineTo(pxX(actualX), pxY(CHART_DATA.headwind.yBottom)); ex.stroke();
+    ex.strokeStyle = withinColor; ex.beginPath(); ex.moveTo(pxX(maxX), pxY(CHART_DATA.main.yBottomFt)); ex.lineTo(pxX(maxX), pxY(CHART_DATA.headwind.yBottom)); ex.stroke();
+    ex.setLineDash([10, 8]); ex.strokeStyle = '#ffffff'; ex.beginPath(); ex.moveTo(pxX(CHART_DATA.headwind.xMin), pxY(hwY)); ex.lineTo(pxX(CHART_DATA.headwind.xMax), pxY(hwY)); ex.stroke();
     ex.restore();
 
-    const dotRadius = includeFooter ? 6 : 5;
+    const dotRadius = includeFooter ? 5.5 : 4.5;
     marker(noWindX, paY, '#ffffff', dotRadius + 1);
     marker(actualX, paY, blue, dotRadius);
     marker(maxX, hwY, withinColor, dotRadius + 1);
-
-    annotate(`PA ${Math.round(result.paFt)} ft`, main.xMin + 3, paY, '#d7e1ef', 0, -12, 'left');
-    annotate(`No wind ${Math.round(result.noWind.noWindKg)} kg`, noWindX, paY, '#ffffff', 0, -18, 'center');
-    annotate(`WT ${Math.round(result.actualWeightKg)} kg`, actualX, paY, blue, 0, -18, 'center');
-    annotate(`HW ${Math.round(result.headwindKt)} kt`, headwind.xMin + 4, hwY, '#d7e1ef', 0, -14, 'left');
-    annotate(`Final ${Math.round(result.maxWeight)} kg`, maxX, hwY, withinColor, 0, -18, 'center');
 
     if (includeSummaryBox) {
       const boxX = compactSummaryBox ? 72 : 56;
@@ -425,7 +367,7 @@ function renderAnnotatedCanvas(result = currentResult, options = {}) {
       ex.fillText('Sempre consulte as publicações oficiais e atualizadas. Esta ferramenta não as substitui.', 80, legendY + 106);
       ex.restore();
     }
-  }  }
+  }
   return exportCanvas;
 }
 
