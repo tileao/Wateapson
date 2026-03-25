@@ -1,10 +1,9 @@
 {
-  "name": "WAC 6800 Sandbox EAPS ON",
-  "short_name": "WAC6800",
+  "name": "WAC 6800 — Sandbox EAPS ON",
+  "short_name": "WAC EAPS ON",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0b0f14",
   "theme_color": "#0b0f14",
-  "description": "Envelope check PWA para charts WAC/WAT do AW139.",
   "icons": []
 }
