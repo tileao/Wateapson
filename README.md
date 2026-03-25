@@ -1,34 +1,13 @@
-# WAC 6800 – Scaffold inicial
+# WAC 6800 — Sandbox EAPS OFF
 
-Este pacote contém a primeira base do PWA da calculadora WAC 6800.
+Ambiente isolado para análise do perfil:
 
-## O que já está pronto
-- Interface mobile-first em dark theme
-- Funcionamento offline por service worker
-- Fluxo operacional para envelope check
-- Card verde/vermelho com Max Weight e Margin
-- Área de visual interpolation em canvas
-- Estrutura para banco JSON por procedimento/configuração
+- Offshore Helideck
+- EAPS OFF
 
-## O que ainda precisa entrar
-- Digitalização real dos charts do PDF
-- Curvas por OAT
-- Regras reais de headwind do Offshore
-- Motor definitivo de interpolação
+Objetivo desta sandbox:
+- usar somente a página do RFM desse perfil
+- documentar casos de teste
+- preparar a extração geométrica correta antes da integração no app principal
 
-## Status do cálculo atual
-A matemática desta versão é apenas um placeholder visual para testar a UX.
-Ela não deve ser usada operacionalmente.
-
-## Próximo passo recomendado
-Digitalizar primeiro:
-1. Offshore Helideck – EAPS OFF
-2. Offshore Helideck – EAPS ON
-3. Offshore Helideck – IBF Installed
-
-Depois ligar a camada gráfica ao motor real.
-
-
-## Phase 1 recalibrated build
-- Offshore Helideck + Standard uses a recalibrated beta curve.
-- Other configurations remain placeholder estimates.
+Nesta fase, a sandbox serve como base de análise isolada.
