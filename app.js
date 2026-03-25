@@ -300,30 +300,88 @@ function renderAnnotatedCanvas(result = currentResult, options = {}) {
     const withinColor = result.within ? '#14b86a' : '#df4f5f';
     const blue = '#52a8ff';
     const amber = '#f3b447';
-    drawPolyline(toPoints(CHART_DATA.limits.maxOat), '#5b6bd4', 2, true);
-    drawPolyline(toPoints(CHART_DATA.limits.hdLimit), '#5b6bd4', 2, true);
-    drawPolyline(result.noWind.lowerCurve, amber, 3);
-    if (result.noWind.upperTemp !== result.noWind.lowerTemp) drawPolyline(result.noWind.upperCurve, amber, 3);
+    const softAmber = 'rgba(243,180,71,0.35)';
+    const softWhite = 'rgba(255,255,255,0.65)';
 
     const paY = result.noWind.paY;
     const noWindX = result.noWind.noWindX;
     const actualX = kgToX(result.actualWeightKg);
     const maxX = kgToX(result.maxWeight);
     const hwY = result.hw.hwY;
+    const main = CHART_DATA.main;
+    const headwind = CHART_DATA.headwind;
+
+    const annotate = (txt, xData, yData, color, dx = 10, dy = -10, align = 'left') => {
+      ex.save();
+      ex.font = '16px Inter, system-ui, sans-serif';
+      ex.fillStyle = color;
+      ex.textAlign = align;
+      ex.textBaseline = 'middle';
+      ex.fillText(txt, pxX(xData) + dx, pxY(yData) + dy);
+      ex.restore();
+    };
+
+    drawPolyline(toPoints(CHART_DATA.limits.maxOat), '#5b6bd4', 2, true);
+    drawPolyline(toPoints(CHART_DATA.limits.hdLimit), '#5b6bd4', 2, true);
+
+    if (result.noWind.lowerCurve) drawPolyline(result.noWind.lowerCurve, result.noWind.upperTemp !== result.noWind.lowerTemp ? softAmber : amber, result.noWind.upperTemp !== result.noWind.lowerTemp ? 2 : 3);
+    if (result.noWind.upperTemp !== result.noWind.lowerTemp && result.noWind.upperCurve) drawPolyline(result.noWind.upperCurve, softAmber, 2);
 
     ex.save();
-    ex.strokeStyle = '#ffffff'; ex.lineWidth = 2.5; ex.setLineDash([12, 10]);
-    ex.beginPath(); ex.moveTo(pxX(CHART_DATA.main.xMin), pxY(paY)); ex.lineTo(pxX(CHART_DATA.main.xMax), pxY(paY)); ex.stroke();
-    ex.setLineDash([]);
-    ex.strokeStyle = blue; ex.beginPath(); ex.moveTo(pxX(actualX), pxY(CHART_DATA.main.yBottomFt)); ex.lineTo(pxX(actualX), pxY(CHART_DATA.headwind.yBottom)); ex.stroke();
-    ex.strokeStyle = withinColor; ex.beginPath(); ex.moveTo(pxX(maxX), pxY(CHART_DATA.main.yBottomFt)); ex.lineTo(pxX(maxX), pxY(CHART_DATA.headwind.yBottom)); ex.stroke();
-    ex.setLineDash([10, 8]); ex.strokeStyle = '#ffffff'; ex.beginPath(); ex.moveTo(pxX(CHART_DATA.headwind.xMin), pxY(hwY)); ex.lineTo(pxX(CHART_DATA.headwind.xMax), pxY(hwY)); ex.stroke();
+    ex.strokeStyle = amber;
+    ex.lineWidth = 4;
+    ex.beginPath();
+    ex.moveTo(pxX(result.noWind.lowerX), pxY(paY));
+    ex.lineTo(pxX(result.noWind.upperX), pxY(paY));
+    ex.stroke();
     ex.restore();
 
-    const dotRadius = includeFooter ? 5.5 : 4.5;
+    ex.save();
+    ex.setLineDash([10, 8]);
+    ex.strokeStyle = softWhite;
+    ex.lineWidth = 2.5;
+
+    ex.beginPath();
+    ex.moveTo(pxX(main.xMin), pxY(paY));
+    ex.lineTo(pxX(main.xMax), pxY(paY));
+    ex.stroke();
+
+    ex.beginPath();
+    ex.moveTo(pxX(noWindX), pxY(paY));
+    ex.lineTo(pxX(noWindX), pxY(headwind.yTop));
+    ex.stroke();
+
+    ex.beginPath();
+    ex.moveTo(pxX(headwind.xMin), pxY(hwY));
+    ex.lineTo(pxX(headwind.xMax), pxY(hwY));
+    ex.stroke();
+
+    ex.setLineDash([]);
+    ex.strokeStyle = blue;
+    ex.lineWidth = 3;
+    ex.beginPath();
+    ex.moveTo(pxX(actualX), pxY(main.yBottomFt));
+    ex.lineTo(pxX(actualX), pxY(headwind.yBottom));
+    ex.stroke();
+
+    ex.strokeStyle = withinColor;
+    ex.beginPath();
+    ex.moveTo(pxX(maxX), pxY(headwind.yBottom));
+    ex.lineTo(pxX(maxX), pxY(hwY));
+    ex.stroke();
+
+    ex.restore();
+
+    const dotRadius = includeFooter ? 6 : 5;
     marker(noWindX, paY, '#ffffff', dotRadius + 1);
     marker(actualX, paY, blue, dotRadius);
     marker(maxX, hwY, withinColor, dotRadius + 1);
+
+    annotate(`PA ${Math.round(result.paFt)} ft`, main.xMin + 3, paY, '#d7e1ef', 0, -12, 'left');
+    annotate(`No wind ${Math.round(result.noWind.noWindKg)} kg`, noWindX, paY, '#ffffff', 0, -18, 'center');
+    annotate(`WT ${Math.round(result.actualWeightKg)} kg`, actualX, paY, blue, 0, -18, 'center');
+    annotate(`HW ${Math.round(result.headwindKt)} kt`, headwind.xMin + 4, hwY, '#d7e1ef', 0, -14, 'left');
+    annotate(`Final ${Math.round(result.maxWeight)} kg`, maxX, hwY, withinColor, 0, -18, 'center');
 
     if (includeSummaryBox) {
       const boxX = compactSummaryBox ? 72 : 56;
@@ -367,7 +425,7 @@ function renderAnnotatedCanvas(result = currentResult, options = {}) {
       ex.fillText('Sempre consulte as publicações oficiais e atualizadas. Esta ferramenta não as substitui.', 80, legendY + 106);
       ex.restore();
     }
-  }
+  }  }
   return exportCanvas;
 }
 
