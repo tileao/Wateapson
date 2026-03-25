@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wac6800-eaps-on-overlay-pagefit-v2';
+const CACHE_NAME = 'wac6800-eaps-on-overlay-pagefit-v3';
 const ASSETS = ['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./docs/page-09.png','./eaps_on_data.json'];
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS))));
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k))))));
